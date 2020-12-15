@@ -1,9 +1,20 @@
+.wrapper {
+  height: 100vh;
+}
+.header-height {
+  height: 10%;
+}
+.body-height {
+  height: 400px;
+  scroll-behavior: smooth;
+  overflow: auto;
+}
 .calender {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
 }
 .cell {
-  height: 100px;
+  height: 80px;
   cursor: pointer;
   text-align: right;
   border: 1px solid #ddd;
@@ -28,4 +39,20 @@
   border-radius: 50px;
   background-color: white;
   color: black;
+}
+
+.previousArrow {
+  width: 10px;
+  transform: rotate(180deg);
+}
+
+.nextArrow {
+  width: 10px;
+}
+.arrowButtonWrapper {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 3px;
+  cursor: pointer;
 }

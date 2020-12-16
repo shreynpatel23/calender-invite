@@ -5,7 +5,6 @@
   height: 10%;
 }
 .body-height {
-  height: 400px;
   scroll-behavior: smooth;
   overflow: auto;
 }
@@ -13,11 +12,21 @@
   display: grid;
   grid-template-columns: repeat(7, 1fr);
 }
+.legend {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.legendText {
+  font-size: 12px;
+  color: #333;
+}
 .cell {
-  height: 80px;
+  height: 120px;
   cursor: pointer;
   text-align: right;
   border: 1px solid #ddd;
+  position: relative;
 }
 .todaysDate {
   height: 30px;
@@ -28,6 +37,9 @@
   border-radius: 50px;
   background-color: red;
   color: white;
+  position: absolute;
+  right: 2px;
+  top: 2px;
 }
 
 .date {
@@ -37,8 +49,10 @@
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  background-color: white;
   color: black;
+  position: absolute;
+  right: 2px;
+  top: 2px;
 }
 
 .previousArrow {
